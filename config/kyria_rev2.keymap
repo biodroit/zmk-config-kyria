@@ -8,16 +8,26 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+// LAYER DEFINITIONS //
+#define BASE   0
+#define BUTTON 1
+#define NAV    2
+#define MOUSE  3
+#define MEDIA  4
+#define NUM    5
+#define SYM    6
+#define FUN    7
 
+// CUSTOM KEY DEFINITIONS //
 #define U_NP &none // key is not present
 #define U_NA &none // present but not available for use
 #define U_NU &none // available but not used
 
-#define U_RDO &kp LC(Y)
-#define U_PST &kp LC(V)
-#define U_CPY &kp LC(C)
-#define U_CUT &kp LC(X)
-#define U_UND &kp LC(Z)
+#define U_RDO &kp LC(Y) // WINDOWS redo
+#define U_PST &kp LC(V) // WINDOWS paste
+#define U_CPY &kp LC(C) // WINDOWS copy
+#define U_CUT &kp LC(X) // WINDOWS cut
+#define U_UND &kp LC(Z) // WINDOWS undo
 
 
 /*                            KEY POSITIONS
@@ -36,28 +46,24 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
-//                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
-	// 		bindings = <
-	// &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	// &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	// &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	//                  &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
-	// 		>;
+
+			/*                       
+
+			╭──────────────────────────────────────────╮                         ╭──────────────────────────────────────────╮
+			│ NONE  Q         W   	 F       P       G │                         │ J  L       U       Y      '         NONE │
+			│ NONE  GUI|A     ALT|R  CTRL|S  SHFT|T  D ╰───────────╮ ╭───────────╯ H  SHFT|N  CTRL|E  ALT|I  GUI|O     NONE │
+			│ NONE  BUTTON|Z  ALT|X  C       V       B  NONE  NONE │ │ NONE  NONE  K  M       ,       ALT|.  BUTTON|/  NONE │
+			╰───────────╮   NONE  FUN|DEL  NUM|BSPC  SYM|RET  NONE │ │ NONE  MOUSE|TAB  NAV|SPC  MEDIA|ESC  NONE ╭──────────╯
+						╰──────────────────────────────────────────╯ ╰───────────────────────────────────────────╯            */
 
 			bindings = <
 	&none  &kp Q         &kp W       &kp F        &kp P        &kp G                                   						&kp J   	 &kp L          &kp U      &kp Y         &kp SQT           &none
-	&none  &hm LGUI A    &hm LAT R   &hm LCTRL S  &hm LSHFT T  &kp D                                   					    &kp H   	 &hm LSHFT N    &LCTRL E   &hm LALT I    &hm LGUI O  	   &none
+	&none  &hm LGUI A    &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp D                                   					    &kp H   	 &hm LSHFT N    &LCTRL E   &hm LALT I    &hm LGUI O  	   &none
 	&none  &lt BUTTON Z  &hm RALT X  &kp C        &kp V        &kp B         &none        &none       &none  &none          &kp K   	 &kp M          &kp COMMA  &hm RALT DOT  &lt BUTTON SLASH  &none
 	                                 &none        &lt FUN DEL  &lt NUM BSPC  &lt SYM RET  &none       &none  &lt MOUSE TAB  &lt NAV SPC  &lt MEDIA ESC  &none
 			>;
 
 			
-
-			// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
@@ -69,7 +75,7 @@
 
 			bindings = <
 	&none  &kp Q         &kp W       &kp F        &kp P        &kp G                                   						&kp J   	 &kp L          &kp U      &kp Y         &kp SQT           &none
-	&none  &hm LGUI A    &hm LAT R   &hm LCTRL S  &hm LSHFT T  &kp D                                   					    &kp H   	 &hm LSHFT N    &LCTRL E   &hm LALT I    &hm LGUI O  	   &none
+	&none  &hm LGUI A    &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp D                                   					    &kp H   	 &hm LSHFT N    &LCTRL E   &hm LALT I    &hm LGUI O  	   &none
 	&none  &lt BUTTON Z  &hm RALT X  &kp C        &kp V        &kp B         &none        &none       &none  &none          &kp K   	 &kp M          &kp COMMA  &hm RALT DOT  &lt BUTTON SLASH  &none
 	                                 &none        &lt FUN DEL  &lt NUM BSPC  &lt SYM RET  &none       &none  &lt MOUSE TAB  &lt NAV SPC  &lt MEDIA ESC  &none
 			>;
@@ -79,6 +85,14 @@
 &hm LGUI A,        &hm LALT R,        &hm LCTRL S,       &hm LSHFT T,       &kp D,             &kp H,             &hm LSHFT N,       &hm LCTRL E,       &hm LALT I,        &hm LGUI O,        \
 &lt BUTTON Z,      &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt BUTTON SLASH,  \
 U_NP,              U_NP,              &lt FUN DEL,       &lt NUM BSPC,      &lt SYM RET,       &lt MOUSE TAB,     &lt NAV SPC,       &lt MEDIA ESC,     U_NP,              U_NP
+
+
+#define MIRYOKU_ALTERNATIVES_BUTTON \
+U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_RDO               U_PST               U_CPY               U_CUT               U_UND               \
+&kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           &none               &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI            \
+U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_RDO               U_PST               U_CPY               U_CUT               U_UND               \
+U_NP                U_NP                U_BTN2              U_BTN3              U_BTN1              U_BTN1              U_BTN3              U_BTN2              U_NP,              U_NP
+
 
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \
@@ -131,11 +145,6 @@ U_NP                U_NP                U_NA                U_NA                
 U_NA                &kp RALT            U_NA                U_NA                U_NA                &kp PAUSE_BREAK     &kp F1              &kp F2              &kp F3              &kp F10             \
 U_NP                U_NP                U_NA                U_NA                U_NA                &kp TAB             &kp SPC             &kp K_APP           U_NP                U_NP
 
-#define MIRYOKU_ALTERNATIVES_BUTTON \
-U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_RDO               U_PST               U_CPY               U_CUT               U_UND               \
-&kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           &none               &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI            \
-U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_RDO               U_PST               U_CPY               U_CUT               U_UND               \
-U_NP                U_NP                U_BTN2              U_BTN3              U_BTN1              U_BTN1              U_BTN3              U_BTN2              U_NP,              U_NP
 
 
 */
