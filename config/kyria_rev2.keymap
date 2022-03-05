@@ -8,6 +8,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+
+#define U_NP &none // key is not present
+#define U_NA &none // present but not available for use
+#define U_NU &none // available but not used
+
+#define U_RDO &kp LC(Y)
+#define U_PST &kp LC(V)
+#define U_CPY &kp LC(C)
+#define U_CUT &kp LC(X)
+#define U_UND &kp LC(Z)
+
+
 /*                            KEY POSITIONS
 
   ╭─────────────-────────-─╮                 ╭────────────────────────╮
@@ -29,14 +41,23 @@
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+	// 		bindings = <
+	// &kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	// &kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	// &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	//                  &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	// 		>;
+
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&none  &kp Q         &kp W       &kp F        &kp P        &kp G                                   						&kp J   	 &kp L          &kp U      &kp Y         &kp SQT           &none
+	&none  &hm LGUI A    &hm LAT R   &hm LCTRL S  &hm LSHFT T  &kp D                                   					    &kp H   	 &hm LSHFT N    &LCTRL E   &hm LALT I    &hm LGUI O  	   &none
+	&none  &lt BUTTON Z  &hm RALT X  &kp C        &kp V        &kp B         &none        &none       &none  &none          &kp K   	 &kp M          &kp COMMA  &hm RALT DOT  &lt BUTTON SLASH  &none
+	                                 &none        &lt FUN DEL  &lt NUM BSPC  &lt SYM RET  &none       &none  &lt MOUSE TAB  &lt NAV SPC  &lt MEDIA ESC  &none
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+			
+
+			// sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
@@ -45,6 +66,15 @@
 /*
 
 #define MIRYOKU_ALTERNATIVES_BASE_COLEMAK_FLIP \
+
+			bindings = <
+	&none  &kp Q         &kp W       &kp F        &kp P        &kp G                                   						&kp J   	 &kp L          &kp U      &kp Y         &kp SQT           &none
+	&none  &hm LGUI A    &hm LAT R   &hm LCTRL S  &hm LSHFT T  &kp D                                   					    &kp H   	 &hm LSHFT N    &LCTRL E   &hm LALT I    &hm LGUI O  	   &none
+	&none  &lt BUTTON Z  &hm RALT X  &kp C        &kp V        &kp B         &none        &none       &none  &none          &kp K   	 &kp M          &kp COMMA  &hm RALT DOT  &lt BUTTON SLASH  &none
+	                                 &none        &lt FUN DEL  &lt NUM BSPC  &lt SYM RET  &none       &none  &lt MOUSE TAB  &lt NAV SPC  &lt MEDIA ESC  &none
+			>;
+
+
 &kp Q,             &kp W,             &kp F,             &kp P,             &kp G,             &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
 &hm LGUI A,        &hm LALT R,        &hm LCTRL S,       &hm LSHFT T,       &kp D,             &kp H,             &hm LSHFT N,       &hm LCTRL E,       &hm LALT I,        &hm LGUI O,        \
 &lt BUTTON Z,      &hm RALT X,        &kp C,             &kp V,             &kp B,             &kp K,             &kp M,             &kp COMMA,         &hm RALT DOT,      &lt BUTTON SLASH,  \
@@ -52,48 +82,60 @@ U_NP,              U_NP,              &lt FUN DEL,       &lt NUM BSPC,      &lt 
 
 
 #define MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP \
-&kp PG_UP,         &kp HOME,          &kp UP,            &kp END,           &kp INS,           U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \
-&kp PG_DN,         &kp LEFT,          &kp DOWN,          &kp RIGHT,         &kp CAPS,          U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_NA,              U_NA,              U_NA,              &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp DEL,           &kp BSPC,          &kp RET,           U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+
+// What is bootloader?
+
+			bindings = <
+	&none  &kp PG_UP     &kp HOME    &kp UP       &kp END      &kp INS                                 						&none   	 &none          &none      &none         &bootloader       &none
+	&none  &hm PG_DN     &hm LEFT    &hm DOWN     &hm RIGHT    &kp CAPS                                					    &none   	 &kp LSHFT      &kp LCTRL  &kp LALT      &kp LGUI   	   &none
+	&none  U_UND         U_CUT       U_CPY        U_PST        U_RDO         &none        &none       &none  &none          &none   	 &none          &none      &kp RALT      &none             &none
+	                                 &none        &kp DEL      &kp BSPC      &kp RET      &none       &none  &none			&none  		 &none		    &none
+			>;
+
+	
+&kp PG_UP           &kp HOME            &kp UP              &kp END             &kp INS             U_NA                U_NA                U_NA                U_NA                &bootloader         \
+&kp PG_DN           &kp LEFT            &kp DOWN            &kp RIGHT           &kp CAPS            U_NA                &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI            \
+U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_NA                U_NA                U_NA                &kp RALT            U_NA                \
+U_NP                U_NP                &kp DEL             &kp BSPC            &kp RET             U_NA                U_NA                U_NA                U_NP                U_NP
+
 
 
 #define MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP \
-U_WH_U,            U_WH_L,            U_MS_U,            U_WH_R,            U_NU,              U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \
-U_WH_D,            U_MS_L,            U_MS_D,            U_MS_R,            U_NU,              U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_NA,              U_NA,              U_NA,              &kp RALT,          U_NA,              \
-U_NP,              U_NP,              U_BTN2,            U_BTN3,            U_BTN1,            U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_WH_U              U_WH_L              U_MS_U              U_WH_R              U_NU                U_NA                U_NA                U_NA                U_NA                &bootloader         \
+U_WH_D              U_MS_L              U_MS_D              U_MS_R              U_NU                U_NA                &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI            \
+U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_NA                U_NA                U_NA                &kp RALT            U_NA                \
+U_NP                U_NP                U_BTN2              U_BTN3              U_BTN1              U_NA                U_NA                U_NA                U_NP                U_NP
 
 #define MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP \
-&rgb_ug RGB_SAI,   &rgb_ug RGB_HUI,   &kp C_VOL_UP,      &rgb_ug RGB_EFF,   &rgb_ug RGB_TOG,   U_NA,              U_NA,              U_NA,              U_NA,              &bootloader,       \
-&rgb_ug RGB_BRI,   &kp C_PREV,        &kp C_VOL_DN,      &kp C_NEXT,        &out OUT_TOG,      U_NA,              &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-&bt BT_SEL 0,      &bt BT_SEL 1,      &bt BT_SEL 2,      &bt BT_SEL 3,      &bt BT_CLR,        U_NA,              U_NA,              U_NA,              &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp C_MUTE,        &kp C_PP,          &kp C_STOP,        U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+&rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &kp C_VOL_UP        &rgb_ug RGB_EFF     &rgb_ug RGB_TOG     U_NA                U_NA                U_NA                U_NA                &bootloader         \
+&rgb_ug RGB_BRI     &kp C_PREV          &kp C_VOL_DN        &kp C_NEXT          &out OUT_TOG        U_NA                &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI            \
+&bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3        &bt BT_CLR          U_NA                U_NA                U_NA                &kp RALT            U_NA                \
+U_NP                U_NP                &kp C_MUTE          &kp C_PP            &kp C_STOP          U_NA                U_NA                U_NA                U_NP                U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_NUM_FLIP \
-&bootloader,       U_NA,              U_NA,              U_NA,              U_NA,              &kp LBKT,          &kp NUM_7,         &kp NUM_8,         &kp NUM_9,         &kp RBKT,          \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp EQL,           &kp NUM_4,         &kp NUM_5,         &kp NUM_6,         &kp SEMI,          \
-U_NA,              &kp RALT,          U_NA,              U_NA,              U_NA,              &kp BSLH,          &kp NUM_1,         &kp NUM_2,         &kp NUM_3,         &kp GRAVE,         \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp MINUS,         &kp NUM_0,         &kp DOT,           U_NP,              U_NP
+&bootloader         U_NA                U_NA                U_NA                U_NA                &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT            \
+&kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           U_NA                &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI            \
+U_NA                &kp RALT            U_NA                U_NA                U_NA                &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp GRAVE           \
+U_NP                U_NP                U_NA                U_NA                U_NA                &kp MINUS           &kp NUM_0           &kp DOT             U_NP                U_NP
 
 #define MIRYOKU_ALTERNATIVES_SYM_FLIP \
-&bootloader,       U_NA,              U_NA,              U_NA,              U_NA,              &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,          \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp PLUS,          &kp DLLR,          &kp PRCT,          &kp CRRT,          &kp COLON,         \
-U_NA,              &kp RALT,          U_NA,              U_NA,              U_NA,              &kp PIPE,          &kp EXCL,          &kp AT,            &kp HASH,          &kp TILDE,         \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp UNDER,         &kp LPAR,          &kp RPAR,          U_NP,              U_NP
+&bootloader         U_NA                U_NA                U_NA                U_NA                &kp LBRC            &kp AMPS            &kp ASTRK           &kp LPAR            &kp RBRC            \
+&kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           U_NA                &kp PLUS            &kp DLLR            &kp PRCT            &kp CRRT            &kp COLON           \
+U_NA                &kp RALT            U_NA                U_NA                U_NA                &kp PIPE            &kp EXCL            &kp AT              &kp HASH            &kp TILDE           \
+U_NP                U_NP                U_NA                U_NA                U_NA                &kp UNDER           &kp LPAR            &kp RPAR            U_NP                U_NP
 
 #define MIRYOKU_ALTERNATIVES_FUN_FLIP \
-&bootloader,       U_NA,              U_NA,              U_NA,              U_NA,              &kp PSCRN,         &kp F7,            &kp F8,            &kp F9,            &kp F12,           \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp SLCK,          &kp F4,            &kp F5,            &kp F6,            &kp F11,           \
-U_NA,              &kp RALT,          U_NA,              U_NA,              U_NA,              &kp PAUSE_BREAK,   &kp F1,            &kp F2,            &kp F3,            &kp F10,           \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp TAB,           &kp SPC,           &kp K_APP,         U_NP,              U_NP
+&bootloader         U_NA                U_NA                U_NA                U_NA                &kp PSCRN           &kp F7              &kp F8              &kp F9              &kp F12             \
+&kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           U_NA                &kp SLCK            &kp F4              &kp F5              &kp F6              &kp F11             \
+U_NA                &kp RALT            U_NA                U_NA                U_NA                &kp PAUSE_BREAK     &kp F1              &kp F2              &kp F3              &kp F10             \
+U_NP                U_NP                U_NA                U_NA                U_NA                &kp TAB             &kp SPC             &kp K_APP           U_NP                U_NP
 
 #define MIRYOKU_ALTERNATIVES_BUTTON \
-U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &none,             &none,             &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-U_UND,             U_CUT,             U_CPY,             U_PST,             U_RDO,             U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-U_NP,              U_NP,              U_BTN2,            U_BTN3,            U_BTN1,            U_BTN1,            U_BTN3,            U_BTN2,            U_NP,              U_NP
+U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_RDO               U_PST               U_CPY               U_CUT               U_UND               \
+&kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           &none               &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI            \
+U_UND               U_CUT               U_CPY               U_PST               U_RDO               U_RDO               U_PST               U_CPY               U_CUT               U_UND               \
+U_NP                U_NP                U_BTN2              U_BTN3              U_BTN1              U_BTN1              U_BTN3              U_BTN2              U_NP,              U_NP
 
 
 */
