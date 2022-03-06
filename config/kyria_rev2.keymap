@@ -102,7 +102,7 @@
                 &none  &kp Q             &kp W              &kp F              &kp P              &kp G                                                          &kp J   	         &kp L              &kp U               &kp Y               &kp SQT           &none
                 &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp D                                                          &kp H   	         &hm LSHFT N        &LCTRL E            &hm LALT I          &hm LGUI O  	  &none
                 &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp V              &kp B         &none        &none     &none      &none          &kp K   	         &kp M              &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
-                                                            &none              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &none     &none      &lt MOUSE TAB  &lt NAV SPC       &lt MEDIA ESC      &none             
+                                                            &none              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &none     &none      &lt MOUSE TAB  &lt NAV SPC         &lt MEDIA ESC      &none             
             >;
                                           
         };                                      
