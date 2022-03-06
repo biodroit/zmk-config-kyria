@@ -39,6 +39,7 @@
 
 // HOME ROW MOD CUSTOMIZATIONS //
 #define U_TAPPING_TERM 200
+#define U_TIMEOUT 50
 
 /*                            KEY POSITIONS
 
@@ -64,18 +65,18 @@
   combos {        
 		compatible = "zmk,combos";        
 		combo_btc {            
-			timeout-ms = <50>;            
+			timeout-ms = <U_TIMEOUT>;            
 			key-positions = <0 12>;            
 			bindings = <&bt BT_CLR>;  
 		}; 
 		combo_min2 {            
-			timeout-ms = <50>;            
+			timeout-ms = <U_TIMEOUT>;            
 			key-positions = <3 4>;            
 			bindings = <&kp MINUS>;  
 		}; 
 	
 		combo_quot2 { 
-			timeout-ms = <50>;             
+			timeout-ms = <U_TIMEOUT>;             
 			key-positions = <27 28>;            
 			bindings = <&kp QUOT>;  
 		};
