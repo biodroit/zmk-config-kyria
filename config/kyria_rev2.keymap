@@ -42,13 +42,13 @@
 #define U_TIMEOUT 50
 
 /*                            KEY POSITIONS
-
   ╭─────────────-────────-─╮                 ╭────────────────────────╮
   │  0   1   2   3   4   5 │                 │  6   7   8   9  10  11 │
   │ 12  13  14  15  16  17 ╰───────╮ ╭───────╯ 18  19  20  21  22  23 │
   │ 24  25  26  27  28  29  30  31 │ │ 32  33  34  35  36  37  38  39 │
   ╰───────────╮ 40  41  42  43  44 │ │ 45  46  47  48  49 ╭───────────╯
-              ╰────────────────────╯ ╰────────────────────╯            */
+              ╰────────────────────╯ ╰────────────────────╯            
+*/
 
 / {
   behaviors {
@@ -89,30 +89,30 @@
         BASE_layer {
               label = "Base"; //MIRYOKU_ALTERNATIVES_BASE_COLEMAK_FLIP
 
-            /*                       
-
+            /*                                                  BASE LAYER
             ╭──────────────────────────────────────────╮                         ╭──────────────────────────────────────────╮
             │ NONE  Q         W      F       P       G │                         │ J  L       U       Y      '         NONE │
             │ NONE  A|WIN     R|ALT  S|CTRL  T|SHFT  D ╰───────────╮ ╭───────────╯ H  N|SHFT  E|CTRL  I|ALT  O|WIN     NONE │
             │ NONE  Z|BUTTON  X|ALT  C       V       B  NONE  NONE │ │ NONE  NONE  K  M       ,       .|ALT  /|BUTTON  NONE │
-            ╰───────────╮   NONE  FUN|DEL  NUM|BSPC  SYM|RET  NONE │ │ NONE  MOUSE|TAB  NAV|SPC  MEDIA|ESC  NONE ╭──────────╯
-                        ╰──────────────────────────────────────────╯ ╰───────────────────────────────────────────╯            */
+            ╰───────────╮   NONE  DEL|FUN  BSPC|NUM  RET|SYM  NONE │ │ NONE  TAB|MOUSE  SPC|NAV  ESC|MEDIA  NONE ╭──────────╯
+                        ╰──────────────────────────────────────────╯ ╰───────────────────────────────────────────╯            
+            */
 
             bindings = <
-                &none  &kp Q             &kp W              &kp F              &kp P              &kp G                                                          &kp J               &kp L              &kp U               &kp Y               &kp SQT           &none
-                &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp D                                                          &kp H               &hm LSHFT N        &LCTRL E            &hm LALT I          &hm LGUI O        &none
-                &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp V              &kp B         &none        &none     &none      &none          &kp K               &kp M              &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
-                                                            &none              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &none     &none      &lt MOUSE TAB  &lt NAV SPC         &lt MEDIA ESC      &none             
-            >;
-                                          
-        };                                      
-        BUTTON_layer {                                      
-              label = "Button"; //MIRYOKU_ALTERNATIVES_BUTTON                                     
-            bindings = <                                      
-                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO                                	                         U_RDO               U_PST              U_CPY               U_CUT               U_UND             &none
-                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                	                         &none               &kp LSHFT          &kp LCTRL           &kp LALT            &kp LGUI          &none
-                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          U_RDO               U_PST              U_CPY               U_CUT               U_UND             &none
-                                                            &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      U_BTN1         U_BTN3              U_BTN2             &none
+                &none  &kp Q             &kp W              &kp F              &kp P              &kp G                                                          &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
+                &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp D                                                          &kp H               &hm LSHFT N         &LCTRL E            &hm LALT I          &hm LGUI O        &none
+                &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp V              &kp B         &none        &none     &none      &none          &kp K               &kp M               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
+                                                            &none              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &none     &none      &lt MOUSE TAB  &lt NAV SPC         &lt MEDIA ESC       &none             
+            >; 
+                                           
+        };                                       
+        BUTTON_layer {                                       
+              label = "Button"; //MIRYOKU_ALTERNATIVES_BUTTON                                      
+            bindings = <                                       
+                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO                                	                         U_RDO               U_PST               U_CPY               U_CUT               U_UND             &none
+                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                	                         &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI          &none
+                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          U_RDO               U_PST               U_CPY               U_CUT               U_UND             &none
+                                                            &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      U_BTN1         U_BTN3              U_BTN2              &none
             >;        
         };  
         NAV_layer {  
