@@ -92,7 +92,7 @@
             /*                       
 
             ╭──────────────────────────────────────────╮                         ╭──────────────────────────────────────────╮
-            │ NONE  Q         W   	 F       P       G │                         │ J  L       U       Y      '         NONE │
+            │ NONE  Q         W      F       P       G │                         │ J  L       U       Y      '         NONE │
             │ NONE  A|WIN     R|ALT  S|CTRL  T|SHFT  D ╰───────────╮ ╭───────────╯ H  N|SHFT  E|CTRL  I|ALT  O|WIN     NONE │
             │ NONE  Z|BUTTON  X|ALT  C       V       B  NONE  NONE │ │ NONE  NONE  K  M       ,       .|ALT  /|BUTTON  NONE │
             ╰───────────╮   NONE  FUN|DEL  NUM|BSPC  SYM|RET  NONE │ │ NONE  MOUSE|TAB  NAV|SPC  MEDIA|ESC  NONE ╭──────────╯
