@@ -1,6 +1,6 @@
 # ZMK Config for the Kyria Keyboard
 
-The keyboard layout is heavily inspired by [Miryoku](https://github.com/manna-harbour/miryoku) (created by [Manna Harbour](https://github.com/manna-harbour)).
+The keyboard layout is heavily inspired by [Miryoku](https://github.com/manna-harbour/miryoku) created by [Manna Harbour](https://github.com/manna-harbour).
 
 # Resources
 
