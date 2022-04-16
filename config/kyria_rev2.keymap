@@ -127,19 +127,19 @@
         SYM_layer {     
             label = "Sym";  //MIRYOKU_ALTERNATIVES_SYM_FLIP   
             bindings = <      
-	&kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+                &none  &none             &none              &none              &none              &none                                                          &kp LBRC            &kp AMPS            &kp ASTRK           &kp LPAR            &kp RBRC         &none   
+                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp PLUS            &kp DLLR            &kp PRCT            &kp CRRT            &kp COLON        &none   
+                &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp PIPE            &kp EXCL            &kp AT              &kp HASH            &kp TILDE        &none   
+                                                            &none              &none              &none          &none       &none    &none     &kp UNDER        &kp LPAR            &kp RPAR            &none   
             >;     
         };     
         FUN_layer {     
             label = "Fun"; //MIRYOKU_ALTERNATIVES_FUN_FLIP    
             bindings = <      
-	&kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+                &none  &none             &none              &none              &none              &none                                                          &kp PSCRN           &kp F7              &kp F8              &kp F9              &kp F12          &none   
+                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp SLCK            &kp F4              &kp F5              &kp F6              &kp F11          &none   
+                &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp PAUSE_BREAK     &kp F1              &kp F2              &kp F3              &kp F10          &none   
+                                                            &none              &none              &none          &none       &none    &none     &kp TAB          &kp SPC             &kp K_APP           &none
             >;
         };
     };
@@ -273,7 +273,7 @@
                 &none  U_WH_D            U_MS_L             U_MS_D             U_MS_R             &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
                 &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none   
                                                             &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      &none          &none               &none               &none    
-            >;      
+            >;      gazxccddzxcdzxcd
         };      
         MEDIA_layer {      
             label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP     
