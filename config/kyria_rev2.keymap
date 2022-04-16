@@ -89,7 +89,7 @@
         NAV_layer {  
             label = "Nav";  //MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP
             bindings = <  
-                &none  &kp PG_UP         &kp HOME           &kp UP             &kp END            &kp INS                                                        &none               &none               &none               &none               &bootloader      &none
+                &none  &kp PG_UP         &kp HOME           &kp UP             &kp END            &kp INS                                                        &none               &none               &none               &none               &none            &none
                 &none  &hm PG_DN         &hm LEFT           &hm DOWN           &hm RIGHT          &kp CAPS                                                       &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none
                 &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none
                                                             &none              &kp DEL            &kp BSPC      &kp RET      &none     &none      &none          &none               &none               &none  
@@ -98,7 +98,7 @@
         MOUSE_layer {      
             label = "Mouse"; //MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP     
             bindings = <       
-                &none  U_WH_U            U_WH_L             U_MS_U             U_WH_R             &none                                                          &none               &none               &none               &none               &bootloader      &none   
+                &none  U_WH_U            U_WH_L             U_MS_U             U_WH_R             &none                                                          &none               &none               &none               &none               &none            &none   
                 &none  U_WH_D            U_MS_L             U_MS_D             U_MS_R             &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
                 &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none   
                                                             &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      &none          &none               &none               &none   
@@ -107,7 +107,7 @@
         MEDIA_layer {      
             label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP     
             bindings = <       
-                &none  &none             &none              &none              &none              &none                                                          &none               &none               &none               &none               &bootloader      &none   
+                &none  &none             &none              &none              &none              &none                                                          &none               &none               &none               &none               &none            &none   
                 &none  &kp C_PREV        &kp C_VOL_DN       &kp C_NEXT         &out OUT_TOG       &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
                 &none  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_CLR    &none       &none      &none      &none          &none               &none               &none               &kp RALT            &none            &none   
                                                             &none              U_BTN2             U_BTN3        U_BTN1      &none      &none      &none          &none               &none               &none     
