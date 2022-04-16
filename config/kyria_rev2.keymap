@@ -107,19 +107,19 @@
         MEDIA_layer {      
             label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP     
             bindings = <       
-                &none  &none             &none              &none              &none              &none                                                          &none               &none               &none               &none               &none            &none   
-                &none  &kp C_PREV        &kp C_VOL_DN       &kp C_NEXT         &out OUT_TOG       &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
-                &none  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_CLR    &none       &none      &none      &none          &none               &none               &none               &kp RALT            &none            &none   
-                                                            &none              U_BTN2             U_BTN3        U_BTN1      &none      &none      &none          &none               &none               &none    
+               &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
             >;      
         };      
         NUM_layer {      
             label = "Num";  //MIRYOKU_ALTERNATIVES_NUM_FLIP    
             bindings = <      
-              &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+                &none  &none             &none              &none              &none              &none                                                          &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT         &none   
+                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
+                &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp GRAVE        &none   
+                                                            &none              &none              &none          &none       &none    &none     &kp MINUS        &kp NUM_0           &kp DOT             &none  
               
               
             >;     
