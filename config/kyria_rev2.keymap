@@ -67,7 +67,7 @@
             // ╰───────────╮   NONE  DEL|FUN  BSPC|NUM  RET|SYM  NONE │ │ NONE  TAB|MOUSE  SPC|NAV  ESC|MEDIA  NONE ╭──────────╯
             //             ╰──────────────────────────────────────────╯ ╰───────────────────────────────────────────╯            
             //
-            
+
 			bindings = <
                 &none  &kp Q             &kp W              &kp F              &kp P              &kp B                                                          &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
                 &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp G                                                          &kp M               &hm LSHFT N         &hm LCTRL E         &hm LALT I          &hm LGUI O        &none
@@ -82,7 +82,7 @@
             bindings = <                                       
                 &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO                                                          U_RDO               U_PST               U_CPY               U_CUT               U_UND             &none
                 &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI          &none
-                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          U_RDO               U_PST               U_CPY               U_CUT               U_UND             &none
+                &none  &none             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          U_RDO               U_PST               U_CPY               U_CUT               &none             &none
                                                             &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      U_BTN1         U_BTN3              U_BTN2              &none
             >;        
         };  
