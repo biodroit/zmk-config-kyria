@@ -77,70 +77,69 @@
         BUTTON_layer {                                       
               label = "Button"; //MIRYOKU_ALTERNATIVES_BUTTON                                      
             bindings = <                                       
-                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO                                                          U_RDO               U_PST               U_CPY               U_CUT               U_UND             &none
-                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI          &none
-                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          U_RDO               U_PST               U_CPY               U_CUT               U_UND             &none
-                                                            &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      U_BTN1         U_BTN3              U_BTN2              &none
+    &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp A   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp A &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
             >;        
         };  
         NAV_layer {  
             label = "Nav";  //MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP
             bindings = <  
-                &none  &kp PG_UP         &kp HOME           &kp UP             &kp END            &kp INS                                                        &none               &none               &none               &none               &bootloader      &none
-                &none  &hm PG_DN         &hm LEFT           &hm DOWN           &hm RIGHT          &kp CAPS                                                       &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none
-                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none
-                                                            &none              &kp DEL            &kp BSPC      &kp RET      &none     &none      &none          &none               &none               &none    
+    &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp A   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp A &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
             >;      
         };      
         MOUSE_layer {      
             label = "Mouse"; //MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP     
             bindings = <       
-                &none  U_WH_U            U_WH_L             U_MS_U             U_WH_R             &none                                                          &none               &none               &none               &none               &bootloader      &none   
-                &none  U_WH_D            U_MS_L             U_MS_D             U_MS_R             &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
-                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none   
-                                                            &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      &none          &none               &none               &none    
+    &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp A   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp A &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT   
             >;      
         };      
         MEDIA_layer {      
             label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP     
             bindings = <       
-                &none  &none             &none              &none              &none              &none                                                          &none               &none               &none               &none               &bootloader      &none   
-                &none  &kp C_PREV        &kp C_VOL_DN       &kp C_NEXT         &out OUT_TOG       &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
-                &none  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_CLR    &none       &none      &none      &none          &none               &none               &none               &kp RALT            &none            &none   
-                                                            &none              U_BTN2             U_BTN3        U_BTN1      &none      &none      &none          &none               &none               &none    
+    &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp A   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp A &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT   
             >;      
         };      
         NUM_layer {      
             label = "Num";  //MIRYOKU_ALTERNATIVES_NUM_FLIP    
             bindings = <      
-                &none  &bootloader       &none              &none              &none              &none                                                          &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT         &none   
-                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
-                &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp GRAVE        &none   
-                                                            &none              &none              &none          &none       &none    &none     &kp MINUS        &kp NUM_0           &kp DOT             &none    
+    &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp A   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp A &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT 
             >;     
         };     
         SYM_layer {     
             label = "Sym";  //MIRYOKU_ALTERNATIVES_SYM_FLIP   
             bindings = <      
-                &none  &bootloader       &none              &none              &none              &none                                                          &kp LBRC            &kp AMPS            &kp ASTRK           &kp LPAR            &kp RBRC         &none   
-                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp PLUS            &kp DLLR            &kp PRCT            &kp CRRT            &kp COLON        &none   
-                &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp PIPE            &kp EXCL            &kp AT              &kp HASH            &kp TILDE        &none   
-                                                            &none              &none              &none          &none       &none    &none     &kp UNDER        &kp LPAR            &kp RPAR            &none    
+    &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp A   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp A &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
             >;     
         };     
         FUN_layer {     
             label = "Fun"; //MIRYOKU_ALTERNATIVES_FUN_FLIP    
             bindings = <      
-                &none  &bootloader       &none              &none              &none              &none                                                          &kp PSCRN           &kp F7              &kp F8              &kp F9              &kp F12          &none   
-                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp SLCK            &kp F4              &kp F5              &kp F6              &kp F11          &none   
-                &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp PAUSE_BREAK     &kp F1              &kp F2              &kp F3              &kp F10          &none   
-                                                            &none              &none              &none          &none       &none    &none     &kp TAB          &kp SPC             &kp K_APP           &none
+    &kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
+	&kp A   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
+	&kp A &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
             >;
         };
     };
 
 
-	};
 };
 
 
