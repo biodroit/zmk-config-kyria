@@ -65,10 +65,10 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT |  | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | GUI  | DEL  | RET  |  SPACE  |   ESC   |  |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-                &kp A  &kp Q             &kp W              &kp F              &kp P              &kp B                                                          &kp J               &kp L               &kp U               &kp Y               &kp SQT           &kp A
-                &kp A  &kp A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp G                                                          &kp M               &hm LSHFT N         &hm LCTRL E            &hm LALT I          &hm LGUI O        &kp A
-                &kp A  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         &kp A        &kp A     &kp A      &kp A          &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &kp A
-                                                            &kp A              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &kp A     &kp A      &lt MOUSE TAB  &lt NAV SPC         &lt MEDIA ESC       &kp A  
+                &none  &kp Q             &kp W              &kp F              &kp P              &kp B                                                          &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
+                &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp G                                                          &kp M               &hm LSHFT N         &hm LCTRL E         &hm LALT I          &hm LGUI O        &none
+                &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         &none        &none     &none      &none          &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
+                                                            &none              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &none     &none      &lt MOUSE TAB  &lt NAV SPC         &lt MEDIA ESC       &none 
 			>;
 			
 		};
