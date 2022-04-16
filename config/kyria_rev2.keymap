@@ -98,10 +98,10 @@
         MOUSE_layer {      
             label = "Mouse"; //MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP     
             bindings = <       
-	&kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+                &none  U_WH_U            U_WH_L             U_MS_U             U_WH_R             &none                                                          &none               &none               &none               &none               &none            &none   
+                &none  U_WH_D            U_MS_L             U_MS_D             U_MS_R             &none                                                          &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
+                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none   
+                                                            &none              U_BTN2             U_BTN3        U_BTN1       &none     &none      &none          &none               &none               &none
             >;      
         };      
         MEDIA_layer {      
