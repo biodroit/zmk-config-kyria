@@ -9,6 +9,39 @@
 #include <dt-bindings/zmk/keys.h>
 
 
+// LAYER DEFINITIONS //
+#define BASE   0
+#define BUTTON 1
+#define NAV    2
+#define MOUSE  3
+#define MEDIA  4
+#define NUM    5
+#define SYM    6
+#define FUN    7
+
+// CUSTOM KEY DEFINITIONS //
+#define U_RDO &kp LC(Y) // WINDOWS redo
+#define U_PST &kp LC(V) // WINDOWS paste
+#define U_CPY &kp LC(C) // WINDOWS copy
+#define U_CUT &kp LC(X) // WINDOWS cut
+#define U_UND &kp LC(Z) // WINDOWS undo
+
+#define U_BTN1 &kp KP_N5
+#define U_BTN2 &none
+#define U_BTN3 &none
+#define U_MS_D &kp KP_N2
+#define U_MS_L &kp KP_N4
+#define U_MS_R &kp KP_N6
+#define U_MS_U &kp KP_N8
+#define U_WH_D &none
+#define U_WH_L &none
+#define U_WH_R &none
+#define U_WH_U &none
+
+// HOME ROW MOD CUSTOMIZATIONS //
+#define U_TAPPING_TERM 200
+#define U_TIMEOUT 50
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
