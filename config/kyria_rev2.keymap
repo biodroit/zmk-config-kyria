@@ -89,10 +89,10 @@
         NAV_layer {  
             label = "Nav";  //MIRYOKU_ALTERNATIVES_NAV_INVERTEDT_FLIP
             bindings = <  
-	&kp A   &kp Q &kp W &kp E &kp R &kp T                                                &kp J &kp L  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp M &kp N  &kp E     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp H  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 &kp LGUI &kp DEL &kp RET &kp SPACE &kp ESC        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+                &none  &kp PG_UP         &kp HOME           &kp UP             &kp END            &kp INS                                                        &none               &none               &none               &none               &bootloader      &none
+                &none  &hm PG_DN         &hm LEFT           &hm DOWN           &hm RIGHT          &kp CAPS                                                       &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none
+                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none        &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none
+                                                            &none              &kp DEL            &kp BSPC      &kp RET      &none     &none      &none          &none               &none               &none   
             >;      
         };      
         MOUSE_layer {      
