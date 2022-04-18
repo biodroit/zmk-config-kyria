@@ -71,7 +71,7 @@
 			bindings = <
                 &none  &kp Q             &kp W              &kp F              &kp P              &kp B                                                          &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
                 &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp G                                                          &kp M               &hm LSHFT N         &hm LCTRL E         &hm LALT I          &kp O             &none
-                &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         &none        &none     &none      &none          &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
+                &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         &kp LA(Q)    &kp LA(A) &none      &none          &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
                                                             &none              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &none     &none      &lt MOUSE TAB  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
 			>;
 			
