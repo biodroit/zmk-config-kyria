@@ -25,6 +25,7 @@
 #define U_CPY &kp LC(C) // WINDOWS copy
 #define U_CUT &kp LC(X) // WINDOWS cut
 #define U_UND &kp LC(Z) // WINDOWS undo
+#define U_SCRNSHT &kp LG(LS(S)) // WINDOWS screenshot
 
 #define U_BTN1 &kp KP_N5
 #define U_BTN2 &none
@@ -71,8 +72,8 @@
 			bindings = <
                 &none  &kp Q             &kp W              &kp F              &kp P              &kp B                                                          &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
                 &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp G                                                          &kp M               &hm LSHFT N         &hm LCTRL E         &hm LALT I          &kp O             &none
-                &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         &kp LA(Q)    &kp LA(A) &none      &none          &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
-                                                            &none              &lt FUN DEL        &lt NUM BSPC  &lt SYM RET  &none     &none      &lt MOUSE TAB  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
+                &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         U_CPY  U_PST           &kp LA(A)       U_SCRNSHT &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
+                                                            &none              &lt FUN DEL        &lt NUM BSPC  &none  &lt SYM RET     &lt MOUSE TAB   &none     &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
 			>;
 			
 		};
@@ -119,7 +120,7 @@
                 &none  &none             &none              &none              &none              &none                                                          &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT         &none   
                 &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
                 &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp GRAVE        &none   
-                                                            &none              &none              &none          &none       &none    &none     &kp MINUS        &kp NUM_0           &kp DOT             &none  
+                                                            &none              &none              &none          &none       &none    &kp MINUS &none            &kp NUM_0           &kp DOT             &none  
               
               
             >;     
@@ -130,7 +131,7 @@
                 &none  &none             &none              &none              &none              &none                                                          &kp LBRC            &kp AMPS            &kp ASTRK           &kp LPAR            &kp RBRC         &none   
                 &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp PLUS            &kp DLLR            &kp PRCT            &kp CRRT            &kp COLON        &none   
                 &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp PIPE            &kp EXCL            &kp AT              &kp HASH            &kp TILDE        &none   
-                                                            &none              &none              &none          &none       &none    &none     &kp UNDER        &kp LPAR            &kp RPAR            &none   
+                                                            &none              &none              &none          &none       &none    &kp UNDER &none            &kp LPAR            &kp RPAR            &none   
             >;     
         };     
         FUN_layer {     
@@ -139,7 +140,7 @@
                 &none  &none             &none              &none              &none              &none                                                          &kp PSCRN           &kp F7              &kp F8              &kp F9              &kp F12          &none   
                 &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp SLCK            &kp F4              &kp F5              &kp F6              &kp F11          &none   
                 &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp PAUSE_BREAK     &kp F1              &kp F2              &kp F3              &kp F10          &none   
-                                                            &none              &none              &none          &none       &none    &none     &kp TAB          &kp SPC             &kp K_APP           &none
+                                                            &none              &none              &none          &none       &none    &kp TAB   &none            &kp SPC             &kp K_APP           &none
             >;
         };
     };
