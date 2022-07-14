@@ -73,7 +73,7 @@
                 &none  &kp Q             &kp W              &kp F              &kp P              &kp B                                                          &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
                 &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hm LSHFT T        &kp G                                                          &kp M               &hm LSHFT N         &hm LCTRL E         &hm LALT I          &kp O             &none
                 &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         &kp LA(TAB) &kp LA(F4)   &kp LA(A)     &kp LA(Q) &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
-                                                            U_SCRNSHT          &lt FUN DEL        &lt NUM BSPC  &none       &lt SYM TAB  &lt MOUSE RET &none     &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
+                                                            U_SCRNSHT          &lt FUN DEL        &lt NUM BSPC  U_SCRNSHT   &lt SYM TAB  &lt MOUSE RET &none     &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
 			>;
 			
 		};
@@ -117,9 +117,9 @@
         NUM_layer {      
             label = "Num";  //MIRYOKU_ALTERNATIVES_NUM_FLIP    
             bindings = <      
-                &none  &none             &none              &none              &none              &none                                                          &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT         &none   
-                &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                          &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
-                &none  &none             &kp RALT           &none              &none              &none          &none       &none    &none     &none            &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp GRAVE        &none   
+                &none  &kp PG_UP         &kp HOME           &kp UP             &kp END            &kp INS                                                        &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT         &none   
+                &none  &kp PG_DN         &kp LEFT           &kp DOWN           &kp RIGHT          &kp CAPS                                                       &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
+                &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO          &none       &none    &none     &none            &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp GRAVE        &none   
                                                             &none              &none              &none          &none       &none    &kp MINUS &none            &kp NUM_0           &kp DOT             &none  
               
               
