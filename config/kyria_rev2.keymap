@@ -140,7 +140,7 @@
                 &none  &none             &none              &none              &none              &none                                                            &kp LBRC            &kp AMPS            &kp ASTRK           &kp LPAR            &kp RBRC         &none   
                 &none  &kp LGUI          &kp LALT           &kp LCTRL          &kp LSHFT          &none                                                            &kp PLUS            &kp DLLR            &kp PRCT            &kp CRRT            &kp COLON        &none   
                 &none  &none             &kp RALT           &none              &none              &none          &none         &none     &none      &none          &kp PIPE            &kp EXCL            &kp AT              &kp HASH            &kp TILDE        &none   
-                                                            &none              &none              &none          &none         &none     &kp UNDER  &none          &kp LPAR            &kp RPAR            &none   
+                                                            &none              &none              &none          &none         &none     &kp UNDER  &kp GRAVE      &kp LPAR            &kp RPAR            &none   
             >;     
         };     
         FUN_layer {     
