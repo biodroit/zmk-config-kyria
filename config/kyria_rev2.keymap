@@ -81,7 +81,7 @@
             //
 
 			bindings = <
-                &none  &lt ESC Q         &kp W              &kp F              &kp P              &kp B                                                            &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
+                &none  &kp Q         &kp W              &kp F              &kp P              &kp B                                                            &kp J               &kp L               &kp U               &kp Y               &kp SQT           &none
                 &none  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hmf LSHFT T       &kp G                                                            &kp M               &hmf LSHFT N        &hm LCTRL E         &hm LALT I          &kp O             &none
                 &none  &lt BUTTON Z      &hm RALT X         &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LA(Q) &kp K               &kp H               &kp COMMA           &hm RALT DOT        &lt BUTTON SLASH  &none
                                                             U_SCRNSHT          &lt FUN DEL        &lt NUM BSPC  &hm TAB TAB   &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
@@ -109,7 +109,7 @@
         };      
         MOUSE_layer {      
             label = "Mouse"; //MIRYOKU_ALTERNATIVES_MOUSE_INVERTEDT_FLIP     
-            bindings = <       
+            bindings = <     
                 &none  U_WH_U            U_WH_L             U_MS_U             U_WH_R             &none                                                            &none               &none               &none               &none               &none            &none   
                 &none  U_WH_D            U_MS_L             U_MS_D             U_MS_R             &none                                                            &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
                 &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO         &none          &none     &none      &none          &none               &none               &none               &kp RALT            &none            &none   
@@ -131,7 +131,7 @@
                 &none  &kp PG_UP         &kp HOME           &kp UP             &kp END            &kp INS                                                          &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT         &none   
                 &none  &hm LGUI PG_DN    &hm LALT LEFT      &hm LCTRL DOWN     &hm LSHFT RIGHT    &kp CAPS                                                         &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
                 &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO          &none         &none     &none      &none          &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp SLASH        &none   
-                                                            &none              &none              &none          &none         &none     &kp MINUS  &kp GRAVE      &kp NUM_0           &kp DOT             &none  
+                                                            &none              &none              &none          &none         &none     &kp MINUS  &kp GRAVE      &kp NUM_0           &kp DOT             &none    
             >;     
         };     
         SYM_layer {     
