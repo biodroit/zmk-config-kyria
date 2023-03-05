@@ -232,6 +232,16 @@
             key-positions = <27 28>;            
             bindings = <&kp QUOT>;  
         };
+        combo_esc {
+            timeout-ms = <U_TIMEOUT>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
+        };
+        combo_esc {
+            timeout-ms = <U_TIMEOUT>;
+            key-positions = <1 2>;
+            bindings = <&kp ESC>;
+        };
     };
 
 
