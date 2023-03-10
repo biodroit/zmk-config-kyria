@@ -41,7 +41,7 @@
 #define U_WH_U &none
 
 // HOME ROW MOD CUSTOMIZATIONS //
-#define U_TAPPING_TERM 300
+#define U_TAPPING_TERM 750
 #define U_TAPPING_TERM_FAST 150
 #define U_TIMEOUT 50
 
