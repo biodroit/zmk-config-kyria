@@ -106,7 +106,7 @@
         ;
     };  
     reference: https://github.com/Eryx5502/zmk-config/blob/master/config/kyria_rev2.keymap
-    */
+    
     alt_tabber: alt_tabber {
       label = "ZM_alt_tabber";
       compatible = "zmk,behavior-macro";
@@ -119,6 +119,7 @@
         , <&macro_release &kp LALT>
         ;
     };
+    */
   };
 
 /*
@@ -130,20 +131,20 @@
  */
 
     combos {
-    compatible = "zmk,combos";
-    combo_esc {
-      timeout-ms = <50>;
-      key-positions = <01 02>;
-      bindings = <&kp ESC>;
-      layers = <BASE SYM NUM NAV>;
-    };
-    compatible = "zmk,combos";
-    combo_screenshot {
-      timeout-ms = <50>;
-      key-positions = <30 31>;
-      bindings = <U_SCRNSHT>;
-      layers = <BASE SYM NUM NAV>;
-    };
+        compatible = "zmk,combos";
+        combo_esc {
+        timeout-ms = <50>;
+        key-positions = <01 02>;
+        bindings = <&kp ESC>;
+        //layers = <BASE SYM NUM NAV>;
+        };
+        compatible = "zmk,combos";
+        combo_screenshot {
+        timeout-ms = <50>;
+        key-positions = <30 31>;
+        bindings = <U_SCRNSHT>;
+        //layers = <BASE SYM NUM NAV>;
+        };
 
   };
     
@@ -189,7 +190,7 @@
                 U_RUNNER   &kp Q             &kp W              &kp F              &kp P              &kp B                                                               &kp J               &kp L               &kp U               &kp Y               &kp SQT           &kp BSPC
                 &kp LCTRL  &kp A             &kp R              &kp S              &hmf LSHFT T       &kp G                                                               &kp M               &hmf LSHFT N        &kp E               &kp I               &kp O             &kp K_CONTEXT_MENU
                 &kp LALT   &lt BUTTON Z      &kp X              &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LA(Q)    &kp K               &kp H               &kp COMMA           &kp DOT             &lt BUTTON SLASH  &kp LCTRL
-                                                                alt_tabber         &lt FUN DEL        &lt NUM BSPC  &hm TAB TAB   &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
+                                                                U_SCRNSHT         &lt FUN DEL        &lt NUM BSPC  &hm TAB TAB   &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
 			>;
 			
 		};
