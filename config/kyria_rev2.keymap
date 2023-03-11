@@ -73,9 +73,9 @@
             
             //                                                  BASE LAYER (no longer up-to-date)
             // ╭──────────────────────────────────────────╮                             ╭──────────────────────────────────────────╮
-            // │ NONE  Q         W      F       P       B │                             │ J  L       U       Y      '         NONE │
-            // │ NONE  A|WIN     R|ALT  S|CTRL  T|SHFT  G ╰───────────────╮ ╭───────────╯ M  N|SHFT  E|CTRL  I|ALT  O         NONE │
-            // │ NONE  Z|BUTTON  X|ALT  C       D       V  NONE   NONE    │ │ NONE  NONE  K  H       ,       .|ALT  /|BUTTON  NONE │
+            // │ ESC   Q         W      F       P       B │                             │ J  L       U       Y      '         BSPC │
+            // │ CTRL  A         R      S       T|SHFT  G ╰───────────────╮ ╭───────────╯ M  N|SHFT  E       I  O         CNTX │
+            // │ ALT   Z|BUTTON  X|ALT  C       D       V  NONE   NONE    │ │ NONE  NONE  K  H       ,       .|ALT  /|BUTTON  CTRL │
             // ╰───────────╮   SCRN  DEL|FUN  BSPC|NUM  TAB|TAB   RED|SYM │ │ TAB|MOUSE  NONE  SPC|NAV  ESC|MEDIA  WIN  ╭──────────╯
             //             ╰──────────────────────────────────────────────╯ ╰───────────────────────────────────────────╯            
             //
@@ -117,7 +117,7 @@
             >;      
         };      
         MEDIA_layer {      
-            label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP     
+            label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP     r  
             bindings = <       
                 &none  &none             &none              &kp C_VOL_UP       &none              &bt BT_CLR                                                       &none               &none               &none               &none               &bootloader      &none   
                 &none  &none             &none              &kp C_VOLUME_DOWN  &none              &none                                                            &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
