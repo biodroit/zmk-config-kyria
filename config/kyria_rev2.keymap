@@ -43,7 +43,7 @@
 #define U_WH_U &none
 
 // HOME ROW MOD CUSTOMIZATIONS //
-#define U_TAPPING_TERM 750
+#define U_TAPPING_TERM 1000
 #define U_TAPPING_TERM_FAST 150
 #define U_TIMEOUT 50
 
@@ -188,7 +188,7 @@
 
 			bindings = <
                 U_RUNNER   &kp Q             &kp W              &kp F              &kp P              &kp B                                                               &kp J               &kp L               &kp U               &kp Y               &kp SQT           &kp BSPC
-                &kp LCTRL  &kp A             &kp R              &kp S              &hmf LSHFT T       &kp G                                                               &kp M               &hmf LSHFT N        &kp E               &kp I               &kp O             &kp K_CONTEXT_MENU
+                &kp LCTRL  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hmf LSHFT T       &kp G                                                               &kp M               &hmf LSHFT N        &hm LCTRL E         &kp LALT I          &hm LGUI O             &kp K_CONTEXT_MENU
                 &kp LALT   &lt BUTTON Z      &kp X              &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LA(Q)    &kp K               &kp H               &kp COMMA           &kp DOT             &lt BUTTON SLASH  &kp LCTRL
                                                                 U_SCRNSHT         &lt FUN DEL        &lt NUM BSPC  &hm TAB TAB   &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
 			>;
