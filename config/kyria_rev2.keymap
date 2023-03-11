@@ -129,7 +129,7 @@
             label = "Num";  //MIRYOKU_ALTERNATIVES_NUM_FLIP    
             bindings = <      
                 &none  &kp PG_UP         &kp HOME           &kp UP             &kp END            &kp INS                                                          &kp LBKT            &kp NUM_7           &kp NUM_8           &kp NUM_9           &kp RBKT         &kp BSPC   
-                &none  &kp PG_DN         &kp LEFT           &kp DOWN           &kp RIGHT          &kp CAPS                                                         &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
+                &none  &kp PG_DN         &kp LEFT           &kp DOWN           &hmf LSHIFT RIGHT  &kp CAPS                                                         &kp EQL             &kp NUM_4           &kp NUM_5           &kp NUM_6           &kp SEMI         &none   
                 &none  U_UND             U_CUT              U_CPY              U_PST              U_RDO          &none         &none     &none      &none          &kp BSLH            &kp NUM_1           &kp NUM_2           &kp NUM_3           &kp SLASH        &none   
                                                             &none              &none              &none          &none         &none     &kp MINUS  &kp GRAVE      &kp NUM_0           &kp DOT             &none    
             >;     
