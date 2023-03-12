@@ -29,14 +29,14 @@
 #define U_SCRNSHT &kp LG(LS(S)) // WINDOWS screenshot
 #define U_A_TAB &kp LA(TAB) // Alt + Tab
 #define U_RUNNER &kp LA(SPACE) // Alt + Space (notes: on windows, it's slow)
-#define U_M1 &kp LG(LS(LA(1))) // To be used in conjuction with AutoHotKey
-#define U_M2 &kp LG(LS(LA(2)))
-#define U_M3 &kp LG(LS(LA(3)))
-#define U_M4 &kp LG(LS(LA(4)))
-#define U_M5 &kp LG(LS(LA(5)))
-#define U_M6 &kp LG(LS(LA(6)))
-#define U_M7 &kp LG(LS(LA(7)))
-#define U_M8 &kp LG(LS(LA(8)))
+#define U_M1 &kp LG(LS(LA(F1))) // To be used in conjuction with AutoHotKey
+#define U_M2 &kp LG(LS(LA(F2)))
+#define U_M3 &kp LG(LS(LA(F3)))
+#define U_M4 &kp LG(LS(LA(F4)))
+#define U_M5 &kp LG(LS(LA(F5)))
+#define U_M6 &kp LG(LS(LA(F6)))
+#define U_M7 &kp LG(LS(LA(F7)))
+#define U_M8 &kp LG(LS(LA(F8)))
 
 #define U_BTN1 &kp KP_N5
 #define U_BTN2 &none
@@ -202,7 +202,7 @@
                 U_M1       &kp Q             &kp W              &kp F              &kp P              &kp B                                                               &kp J               &kp L               &kp U               &kp Y               &kp SQT           U_M4
                 U_M2       &hm LGUI A        &hm LALT R         &hm LCTRL S        &hmf LSHFT T       &kp G                                                               &kp M               &hmf LSHFT N        &hm LCTRL E         &hm LALT I          &hm LGUI O        U_M5
                 U_M3       &lt BUTTON Z      &kp X              &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LG(LA(Q))&kp K               &kp H               &kp COMMA           &kp DOT             &lt BUTTON SLASH  U_M6
-                                                                &none              &lt FUN DEL        &lt NUM BSPC  &kp TAB       &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
+                                                                &none              &lt FUN DEL        &lt NUM BSPC  &kp TAB       &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &none
 			>;
 			
 		};
