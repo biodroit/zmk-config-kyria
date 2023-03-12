@@ -49,13 +49,6 @@
 // Shortcuts //
 
 
-/*
-&caps_word {
-  continue-list = <LSHFT RSHIFT ES_UNDS ES_MINS ES_PLUS BSPC>;
-};  
-*/
-
-
 / {
 
     macros {
@@ -71,53 +64,7 @@
         , <&macro_release &kp LGUI>
         ;
     };
-    win_left: win_left {
-      label = "ZM_win_left";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      wait-ms = <10>;
-      bindings
-        = <&macro_press &kp LGUI>
-        , <&macro_tap &kp LEFT>
-        , <&macro_release &kp LGUI>
-        ;
-    };
-    win_up: win_up {
-      label = "ZM_win_up";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      wait-ms = <10>;
-      bindings
-        = <&macro_press &kp LGUI>
-        , <&macro_tap &kp UP>
-        , <&macro_release &kp LGUI>
-        ;
-    };
-    win_down: win_down {
-      label = "ZM_win_down";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      wait-ms = <10>;
-      bindings
-        = <&macro_press &kp LGUI>
-        , <&macro_tap &kp DOWN>
-        , <&macro_release &kp LGUI>
-        ;
-    };  
-    reference: https://github.com/Eryx5502/zmk-config/blob/master/config/kyria_rev2.keymap
-    
-    alt_tabber: alt_tabber {
-      label = "ZM_alt_tabber";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      wait-ms = <10>;
-      bindings
-        = <&macro_press &kp LALT>
-        , <&macro_tap &kp TAB>
-        , <&macro_pause_for_release>
-        , <&macro_release &kp LALT>
-        ;
-    };
+
     */
   };
 
@@ -133,7 +80,7 @@
         compatible = "zmk,combos";
         combo_esc {
         timeout-ms = <50>;
-        key-positions = <01 02>;
+        key-positions = <02 03>;
         bindings = <&kp ESC>;
         //layers = <BASE SYM NUM NAV>;
         };
@@ -144,17 +91,15 @@
         bindings = <U_SCRNSHT>;
         //layers = <BASE SYM NUM NAV>;
         };
-
-
-
-        
-
+        compatible = "zmk,combos";
+        combo_leaveZoomMeeting {
+        timeout-ms = <50>;
+        key-positions = <32 33>;
+        bindings = <&kp LA(Q)>;
+        //layers = <BASE SYM NUM NAV>;
+        };
   };
     
-
-
-
-
     behaviors {
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
@@ -174,6 +119,7 @@
       bindings = <&kp>, <&kp>;
     };
 
+    /*
     hm_l: homerow_mods_left {
         compatible = "zmk,behavior-hold-tap";
         label = "HOMEROW_MODS_LEFT";
@@ -201,7 +147,7 @@
         hold-trigger-key-positions = <KEYS_L KEYS_T>;
         hold-trigger-on-release;             // requires PR #1423
     };
-
+    */
 
 
 
