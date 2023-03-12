@@ -171,8 +171,8 @@
 			bindings = <
                 U_RUNNER   &kp Q             &kp W              &kp F              &kp P              &kp B                                                               &kp J               &kp L               &kp U               &kp Y               &kp SQT           &kp BSPC
                 &kp LCTRL  &hm LGUI A        &hm LALT R         &hm LCTRL S        &hmf LSHFT T       &kp G                                                               &kp M               &hmf LSHFT N        &hm LCTRL E         &hm LALT I          &hm LGUI O             &kp K_CONTEXT_MENU
-                &kp LALT   &lt BUTTON Z      &kp X              &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LA(Q)    &kp K               &kp H               &kp COMMA           &kp DOT             &lt BUTTON SLASH  &kp LCTRL
-                                                                U_SCRNSHT         &lt FUN DEL        &lt NUM BSPC  &hm TAB TAB   &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
+                &kp LALT   &lt BUTTON Z      &kp X              &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LG(LA(Q))&kp K               &kp H               &kp COMMA           &kp DOT             &lt BUTTON SLASH  &kp LCTRL
+                                                                U_SCRNSHT          &lt FUN DEL        &lt NUM BSPC  &hm TAB TAB   &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
 			>;
 			
 		};
