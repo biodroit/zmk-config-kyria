@@ -170,6 +170,9 @@
 
 
   };
+};
+
+/{
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -259,5 +262,5 @@
         };
     };
 
-
 };
+
