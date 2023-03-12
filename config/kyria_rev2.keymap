@@ -53,7 +53,7 @@
 / {
 
     macros {
-
+/*
         my_macro: my_macro {
         compatible = "zmk,behavior-macro";
         label = "ZM_LR_BKT";
@@ -62,7 +62,7 @@
         tap-ms = <40>;
         bindings = <&kp LBKT &kp RBKT &kp SPACE>;
         };
-    /*
+    
     win_right: win_right {
       label = "ZM_win_right";
       compatible = "zmk,behavior-macro";
@@ -108,6 +108,7 @@
         bindings = <&kp LA(Q)>;
         //layers = <BASE SYM NUM NAV>;
         };
+        /*
         compatible = "zmk,combos";
         combo_leaveZoomMeeting {
         timeout-ms = <50>;
@@ -115,6 +116,7 @@
         bindings = <&my_macro>;
         //layers = <BASE SYM NUM NAV>;
         };
+        */
   };
     
     behaviors {
