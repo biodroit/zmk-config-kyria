@@ -116,6 +116,7 @@
         bindings = <&kp LA(Q)>;
         //layers = <BASE SYM NUM NAV>;
         };
+        /*
         compatible = "zmk,combos";
         combo_sqrBracketsL {
         timeout-ms = <50>;
