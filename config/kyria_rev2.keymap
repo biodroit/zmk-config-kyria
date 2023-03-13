@@ -116,6 +116,35 @@
         bindings = <&kp LA(Q)>;
         //layers = <BASE SYM NUM NAV>;
         };
+        compatible = "zmk,combos";
+        combo_sqrBracketsL {
+        timeout-ms = <50>;
+        key-positions = <07 08>;
+        bindings = <&kp LEFT_BRACKET>;
+        //layers = <BASE SYM NUM NAV>;
+        };
+        compatible = "zmk,combos";
+        combo_sqrBracketsR {
+        timeout-ms = <50>;
+        key-positions = <08 09>;
+        bindings = <&kp RIGHT_BRACKET>;
+        //layers = <BASE SYM NUM NAV>;
+        };
+        
+        compatible = "zmk,combos";
+        combo_LPAR {
+        timeout-ms = <50>;
+        key-positions = <19 20>;
+        bindings = <&kp LPAR>;
+        //layers = <BASE SYM NUM NAV>;
+        };
+        compatible = "zmk,combos";
+        combo_RPAR {
+        timeout-ms = <50>;
+        key-positions = <20 21>;
+        bindings = <&kp RPAR>;
+        //layers = <BASE SYM NUM NAV>;
+        };
         /*
         compatible = "zmk,combos";
         combo_leaveZoomMeeting {
