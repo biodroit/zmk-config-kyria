@@ -120,14 +120,14 @@
         combo_sqrBracketsL {
         timeout-ms = <50>;
         key-positions = <07 08>;
-        bindings = <&kp LEFT_BRACKET>;
+        bindings = <&kp LBKT>;
         //layers = <BASE SYM NUM NAV>;
         };
         compatible = "zmk,combos";
         combo_sqrBracketsR {
         timeout-ms = <50>;
         key-positions = <08 09>;
-        bindings = <&kp RIGHT_BRACKET>;
+        bindings = <&kp RBKT>;
         //layers = <BASE SYM NUM NAV>;
         };
         
@@ -221,7 +221,7 @@
             //                                                  BASE LAYER (no longer up-to-date)
             // ╭──────────────────────────────────────────╮                             ╭──────────────────────────────────────────╮
             // │ ESC   Q         W      F       P       B │                             │ J  L       U       Y      '         BSPC │
-            // │ CTRL  A         R      S       T|SHFT  G ╰───────────────╮ ╭───────────╯ M  N|SHFT  E       I  O         CNTX │
+            // │ CTRL  A         R      S       T|SHFT  G ╰───────────────╮ ╭───────────╯ M  N|SHFT  E       I      O         CNTX │
             // │ ALT   Z|BUTTON  X|ALT  C       D       V  NONE   NONE    │ │ NONE  NONE  K  H       ,       .|ALT  /|BUTTON  CTRL │
             // ╰───────────╮   SCRN  DEL|FUN  BSPC|NUM  TAB|TAB   RED|SYM │ │ TAB|MOUSE  NONE  SPC|NAV  ESC|MEDIA  WIN  ╭──────────╯
             //             ╰──────────────────────────────────────────────╯ ╰───────────────────────────────────────────╯            
