@@ -237,7 +237,8 @@
                 U_M3       &lt BUTTON Z      &kp X              &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LG(LA(Q))&kp K               &kp H               &kp COMMA           &kp DOT             &lt BUTTON SLASH  U_M6
                                                                 &none              &lt FUN DEL        &lt NUM BSPC  &kp TAB       &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &none
 			>;
-			sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			//sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_DN PG_UP>;
 		};
 
         BUTTON_layer {                                       
