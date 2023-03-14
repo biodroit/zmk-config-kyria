@@ -55,8 +55,8 @@
 #define U_TAPPING_TERM_FAST 150
 #define U_TIMEOUT 50
 
-&left_encoder { resolution = <2>; };
-&right_encoder { resolution = <2>; };
+// &left_encoder { resolution = <2>; };
+// &right_encoder { resolution = <2>; };
 
 // Shortcuts //
 
