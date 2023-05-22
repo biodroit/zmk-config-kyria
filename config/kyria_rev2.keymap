@@ -201,7 +201,7 @@
         bindings = <&kp>, <&kp>;
 
         flavor = "balanced";
-        tapping-term-ms = <HM_TAPPING_TERM>;
+        tapping-term-ms = <HM_TAPPING_TERM>;   
         quick_tap_ms = <175>;
         global-quick-tap-ms = <150>;         // requires PR #1387
         hold-trigger-key-positions = <KEYS_L KEYS_T>;
@@ -235,7 +235,7 @@
                 &kp LG(LEFT)     &kp Q             &kp W              &kp F              &kp P              &kp B                                                               &kp J               &kp L               &kp U               &kp Y               &kp SQT           U_M4
                 &kp LG(RIGHT)    &hm LGUI A        &hm LALT R         &hm LCTRL S        &hmf LSHFT T       &kp G                                                               &kp M               &hmf LSHFT N        &hm LCTRL E         &hm LALT I          &hm LGUI O        U_M5
                 U_M3             &lt BUTTON Z      &kp X              &kp C              &kp D              &kp V         U_CPY         U_PST        &kp LA(A)     &kp LG(LA(Q))&kp K               &kp H               &kp COMMA           &kp DOT             &lt BUTTON SLASH  U_M6
-                                                                      &none              &lt FUN DEL        &lt NUM BSPC  &kp TAB       &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC      &none
+                                                                      &none              &lt FUN DEL        &lt NUM BSPC  &kp TAB       &lt SYM RET  &lt MOUSE TAB &key_repeat  &lt NAV SPC         &lt MEDIA ESC       &kp LGUI
 			>;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			//sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_DN PG_UP>;
@@ -269,7 +269,7 @@
             >;      
         };      
         MEDIA_layer {      
-            label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP     r  
+            label = "Media"; //MIRYOKU_ALTERNATIVES_MEDIA_INVERTEDT_FLIP
             bindings = <       
                 &none  &none             &kp C_PREV         &kp C_VOL_UP       &kp C_NEXT         &none                                                            &none               &none               &none               &none               &bootloader      &none   
                 &none  &none             &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_PLAY_PAUSE   &none                                                            &none               &kp LSHFT           &kp LCTRL           &kp LALT            &kp LGUI         &none   
