@@ -170,7 +170,7 @@
       bindings = <&kp>, <&kp>;
     };
     // for faster tapping terms
-    hmf: homerow_mods {
+    hmf: homerow_mods_fast {
       compatible = "zmk,behavior-hold-tap";
       label = "HOMEROW_MODS";
       #binding-cells = <2>;
