@@ -119,6 +119,13 @@
         bindings = <&kp LA(Q)>;
         //layers = <BASE SYM NUM NAV>;
         };
+        compatible = "zmk,combos";
+        combo_alttab {
+        timeout-ms = <50>;
+        key-positions = <03 04>;
+        bindings = <&kp LA(TAB)>;
+        //layers = <BASE SYM NUM NAV>;
+        };
         /*
         compatible = "zmk,combos";
         combo_sqrBracketsL {
